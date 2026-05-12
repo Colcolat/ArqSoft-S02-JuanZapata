@@ -1,9 +1,5 @@
 ﻿namespace Ahorcado;
-
-public class IRepositorioPalabras
-{
-    public interface IRepositorioPalabra
+    public interface IRepositorioPalabras
     {
-        string ObtenerPalabra();
+        string ObtenerPalabraSecreta();
     }
-}

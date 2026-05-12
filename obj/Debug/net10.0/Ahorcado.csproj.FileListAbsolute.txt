@@ -12,3 +12,4 @@ C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\refint\Ahorcado.dll
 C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\Ahorcado.pdb
 C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\Ahorcado.genruntimeconfig.cache
 C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\ref\Ahorcado.dll
+C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\Ahorcado.sourcelink.json
