@@ -1,4 +1,4 @@
-﻿/*var repositorio = new Ahorcado.PalabrasEnMemoria();
+﻿var repositorio = new Ahorcado.PalabrasEnMemoria();
 var motor = new Ahorcado.MotorAhorcado(repositorio);
 var ui = new Ahorcado.ConsoleUI(motor);
 
@@ -30,9 +30,3 @@ if (ui.PreguntarOtraVez())
     var nuevoMotor = new Ahorcado.MotorAhorcado(repositorio);
     var nuevaUI = new Ahorcado.ConsoleUI(nuevoMotor);
 }
-*/
-
-using Ahorcado;
-
-var juego = new Ahorcado.Juego();
-juego.Jugar();
