@@ -1,0 +1,14 @@
+C:\Users\jjzap\RiderProjects\Ahorcado\bin\Debug\net10.0\Ahorcado.exe
+C:\Users\jjzap\RiderProjects\Ahorcado\bin\Debug\net10.0\Ahorcado.deps.json
+C:\Users\jjzap\RiderProjects\Ahorcado\bin\Debug\net10.0\Ahorcado.runtimeconfig.json
+C:\Users\jjzap\RiderProjects\Ahorcado\bin\Debug\net10.0\Ahorcado.dll
+C:\Users\jjzap\RiderProjects\Ahorcado\bin\Debug\net10.0\Ahorcado.pdb
+C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\Ahorcado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\Ahorcado.AssemblyInfoInputs.cache
+C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\Ahorcado.AssemblyInfo.cs
+C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\Ahorcado.csproj.CoreCompileInputs.cache
+C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\Ahorcado.dll
+C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\refint\Ahorcado.dll
+C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\Ahorcado.pdb
+C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\Ahorcado.genruntimeconfig.cache
+C:\Users\jjzap\RiderProjects\Ahorcado\obj\Debug\net10.0\ref\Ahorcado.dll
