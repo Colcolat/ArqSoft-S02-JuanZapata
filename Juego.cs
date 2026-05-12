@@ -10,6 +10,7 @@
         private string _palabraSecreta;
         private List<char> _letrasUsadas;
         private int _intentosRestantes;
+        private int _intentosFallidos;
 
         public Juego()
         {
@@ -17,6 +18,7 @@
             _palabraSecreta = _palabras[random.Next(_palabras.Count)];
             _letrasUsadas = new List<char>();
             _intentosRestantes = 6;
+            _intentosFallidos = 0;
         }
 
         public void Jugar()
@@ -49,7 +51,11 @@
                 _letrasUsadas.Add(letra);
 
                 if (!_palabraSecreta.Contains(letra))
+                {
                     _intentosRestantes--;
+                    _intentosFallidos++;
+                }
+
             }
 
             MostrarTablero();
@@ -76,6 +82,11 @@
             foreach (char c in _palabraSecreta)
                 Console.Write(_letrasUsadas.Contains(c) ? c : '_');
             Console.WriteLine();
+
+            if (_intentosFallidos == 3)
+            {
+                Console.WriteLine("PISTA: La primera letra de la palabra es: " + _palabraSecreta.First());
+            }
         }
 
         private void MostrarAhorcado()
