@@ -8,9 +8,7 @@ if (opcion == "1")
 {
     // --- LÓGICA DEL AHORCADO ---
     var repositorio = new Ahorcado.PalabrasEnMemoria();
-    var motor = new Ahorcado.MotorAhorcado(repositorio);
-    var ui = new Ahorcado.ConsoleUI(motor);
- 
+    
     Console.WriteLine("=== AHORCADO ===");
     // Menú principal
     Console.WriteLine("Seleccione la Temática.");
@@ -18,10 +16,20 @@ if (opcion == "1")
     Console.WriteLine("  2 — POO");
     Console.WriteLine("  3 — .NET");
 
-    int popo = Console.Read();
+    // Corrección en la condición: < 1 || > 3
+    if (!int.TryParse(Console.ReadLine(), out int eleccion) || eleccion < 1 || eleccion > 3)
+    {
+        Console.WriteLine("Opción no válida.");
+        return;
+    }
+    
+    // Primero asignamos el tema
+    repositorio.setTemaPalabraSecreta(eleccion);
 
-    repositorio.setTemaPalabraSecreta(popo);
- 
+    // AHORA SÍ inicializamos el motor, porque ya sabe qué tema usar
+    var motor = new Ahorcado.MotorAhorcado(repositorio);
+    var ui = new Ahorcado.ConsoleUI(motor);
+
     while (!motor.Ganado() && !motor.Perdido())
     {
         ui.MostrarTablero();
@@ -42,8 +50,6 @@ if (opcion == "1")
     else
         ui.MostrarMensaje($"\nPerdiste. La palabra era: {motor.PalabraSecreta}");
  
-    // Nota: El código original de 'PreguntarOtraVez' solo instanciaba
-    // pero no reiniciaba el bucle. Aquí se mantiene igual a tu fragmento.
     if (ui.PreguntarOtraVez())
     {
         var nuevoMotor = new Ahorcado.MotorAhorcado(repositorio);
