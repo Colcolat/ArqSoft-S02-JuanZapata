@@ -8,7 +8,7 @@
         {
             _motor = motor;
         }
-
+        
         public void MostrarTablero()
         {
             Console.Clear();

@@ -1,5 +1,4 @@
-﻿// Menú principal
-Console.WriteLine("¿Qué juego quieres jugar?");
+﻿Console.WriteLine("¿Qué juego quieres jugar?");
 Console.WriteLine("  1 — Ahorcado");
 Console.WriteLine("  2 — Viborita");
 Console.Write("Opción: ");
@@ -13,6 +12,15 @@ if (opcion == "1")
     var ui = new Ahorcado.ConsoleUI(motor);
  
     Console.WriteLine("=== AHORCADO ===");
+    // Menú principal
+    Console.WriteLine("Seleccione la Temática.");
+    Console.WriteLine("  1 — Arquitectura");
+    Console.WriteLine("  2 — POO");
+    Console.WriteLine("  3 — .NET");
+
+    int popo = Console.Read();
+
+    repositorio.setTemaPalabraSecreta(popo);
  
     while (!motor.Ganado() && !motor.Perdido())
     {

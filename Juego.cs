@@ -7,6 +7,7 @@
             "arquitectura", "interfaz", "polimorfismo",
             "encapsulamiento", "herencia"
         };
+        
         private string _palabraSecreta;
         private List<char> _letrasUsadas;
         private int _intentosRestantes;
